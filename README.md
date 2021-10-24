@@ -46,7 +46,7 @@ Produtos na hortmart
   
 Contato 
 <div style="text-align: center">
-<a href="mailto:luiz.junior@estudante.ufla.br"><img width="36" height="36" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt=""> </a>
+<a href="mailto:contato@uflaniano.com.br"><img width="36" height="36" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>
 
