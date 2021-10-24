@@ -72,8 +72,8 @@ Minhas Redes Sociais
  <br>--------------------------------<br>
 </div>
   
-  <h2> Exercicios resolvidos </h2>
-  <h3>01-preparacao-do-ambiente</h3>
+<h2>Exercicios resolvidos </h2>
+<h3>01-preparacao-do-ambiente</h3>
 Resolução do exercicio da (Aula1-Unix-Shell-Básico) - individual
 <div style="text-align: center">
 <a href="https://github.com/zolpy/01-preparacao-do-ambiente/tree/main/Repostas"><img width="36" height="36" src="https://cdn2.iconfinder.com/data/icons/superglyph-os/30/linux-256.png" alt=""> </a>
@@ -82,13 +82,13 @@ Resolução do exercicio da (Aula1-Unix-Shell-Básico) - individual
   
 Resolução do exercicio da (Aula2-Dockers-e-Contêineres-Trabalho-Docker) - individual
 <div style="text-align: center">
-<a href="https://hub.docker.com/repository/docker/uflaniano/agora_vai"><img width="36" height="36" src="https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_docker-256.png" alt=""> </a>
+<a href="https://hub.docker.com/r/uflaniano/agora_vai"><img width="36" height="36" src="https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_docker-256.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>
 
 Resolução do exercicio da (Aula2-Dockers-e-Contêineres-Trabalho-Docker2) - em grupo
 <div style="text-align: center">
-<a href="https://hub.docker.com/repository/docker/uflaniano/team3"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_docker-256.png" alt=""> </a>
+<a href="https://hub.docker.com/r/uflaniano/team3"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_docker-256.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>  
   
