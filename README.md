@@ -101,7 +101,13 @@ Resolução do exercicio da (Aula5-Workflow-de-Trabalho-com-Git) - em dupla (Afr
   <h3>02-programacao-python</h3>  
   Resolução do exercicio da (Aula1-Setup-de-Ambiente-com-conda-e-ambiente-jupyter)
 <div style="text-align: center">
-<a href="https://github.com/ai2-education-fiep-turma-4/resident-profiles/tree/main/LuizBrandao/02-programacao-python/Aula1-Setup-de-Ambiente-com-conda-e-ambiente-jupyter"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/Aula1-Setup-de-Ambiente-com-conda-e-ambiente-jupyter"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>  
+
+  Resolução do exercicio da (Aula2-Topicos-de-Linguagens-de-Programacao-Slides-Exercicios)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/Aula2-Topicos-de-Linguagens-de-Programacao-Slides-Exercicios"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>  
   
