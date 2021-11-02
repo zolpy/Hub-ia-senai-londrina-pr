@@ -118,4 +118,10 @@ Resolução do exercicio da (Aula5-Workflow-de-Trabalho-com-Git) - em dupla (Afr
 </div>  
 
 
+Resolução do exercicio da (Aula5-Diagramas-de-classe)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/Aula5-Diagramas-de-classe">"><img width="36" height="36" src="https://cdn4.iconfinder.com/data/icons/infographics-chart-3/512/5-256.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>  
+
   
