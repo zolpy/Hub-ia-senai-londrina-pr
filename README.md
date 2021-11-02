@@ -110,4 +110,12 @@ Resolução do exercicio da (Aula5-Workflow-de-Trabalho-com-Git) - em dupla (Afr
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/Aula2-Topicos-de-Linguagens-de-Programacao-Slides-Exercicios"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>  
+
+  Resolução do exercicio da (Aula4-Topicos-de-Lingagens-de-Programacao-heranca)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/Aula4-Topicos-de-Lingagens-de-Programacao-heranca"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>  
+
+
   
