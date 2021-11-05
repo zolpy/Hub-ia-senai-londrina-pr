@@ -106,13 +106,20 @@ Resolução do exercicio da (Aula5-Workflow-de-Trabalho-com-Git) - em dupla (Afr
 <br>--------------------------------<br>
 </div>  
 
-  Resolução do exercicio da (Aula2-Topicos-de-Linguagens-de-Programacao-Slides-Exercicios)
+Resolução do exercicio da (Aula2-Topicos-de-Linguagens-de-Programacao-Slides-Exercicios)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/exercicios_resolvidos/Aula2-Topicos-de-Linguagens-de-Programacao-Slides-Exercicios"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>  
 
-  Resolução do exercicio da (Aula4-Topicos-de-Lingagens-de-Programacao-heranca)
+Resolução do exercicio da (Aula3-Topicos-de-Linguagens-de-Programacao-Classes)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/exercicios_resolvidos/Aula3-Topicos-de-Linguagens-de-Programacao"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>  
+
+
+Resolução do exercicio da (Aula4-Topicos-de-Lingagens-de-Programacao-heranca)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/exercicios_resolvidos/Aula4-Topicos-de-Lingagens-de-Programacao-heranca"><img width="36" height="36" src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-256.png" alt=""> </a>
 <br>--------------------------------<br>
@@ -124,6 +131,4 @@ Resolução do exercicio da (Aula5-Diagramas-de-classe)
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/exercicios_resolvidos/Aula5-Diagramas-de-classe"><img width="36" height="36" src="https://cdn4.iconfinder.com/data/icons/infographics-chart-3/512/5-256.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>  
-
-
   
