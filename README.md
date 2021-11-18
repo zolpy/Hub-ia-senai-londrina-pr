@@ -133,6 +133,7 @@ Resolução do exercicio da (Aula5-Diagramas-de-classe)
 </div>  
 
 
+
 Resolução do exercicio da (Aula8-Manipulacao-de-dados-utilizando-Pandas)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/02-programacao-python/exercicios_resolvidos/Aula8-Manipulacao-de-dados-utilizando-Pandas"><img width="36" height="36" src="https://cdn-icons-png.flaticon.com/512/375/375141.png" alt=""> </a>
