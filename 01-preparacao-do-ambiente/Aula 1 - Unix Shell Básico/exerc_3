@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo " " > Log.txt
+echo "3. Crie um script de log que apresente" >> Log.txt
+echo "(3a) O diretório corrente (atual)" >> Log.txt
+echo "(3b) Seu nome completo e sua idade" >> Log.txt
+echo "(3c) Momento de execução do arquivo" >> Log.txt
+echo "(3d) Grave uma frase que você acredita ser importante (rs)" >> Log.txt
+echo " - " >> Log.txt
+
+hora_sistema='%d/%m/%y_(%H:%M:%S)'
+PWD=`pwd` #acento miseravel 
+nome='Luiz Carlos Brandão Junior'
+idade='42'
+frase='Programar não é dificil, ela só não é fácil, mas dificil né não!'
+
+for (( counter=10; counter>0; counter-- ))
+do
+echo "$PWD | $nome | $idade | $(date +$hora_sistema) | $frase" >>  Log.txt
+done
+printf "\n"
+
+

@@ -1,0 +1,17 @@
+3. Crie um script de log que apresente
+(3a) O diretório corrente (atual)
+(3b) Seu nome completo e sua idade
+(3c) Momento de execução do arquivo
+(3d) Grave uma frase que você acredita ser importante (rs)
+ - 
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+/home/ai2_fiep/Exer_01/Luiz_B | Luiz Carlos Brandão Junior | 42 | 03/12/20_(09:59:02) | Programar não é dificil, ela só não é fácil, mas dificil né não!
+

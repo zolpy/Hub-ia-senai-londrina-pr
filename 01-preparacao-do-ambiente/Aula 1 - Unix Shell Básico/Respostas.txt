@@ -1,0 +1,107 @@
+Clear
+#####################################################
+cat echo.txt | tail -n+2 >>  Respostas.txt
+ - 
+(1a). Exibir o conteúdo de echo.txt sem a primeira linha de cabeçalho 
+ - 
+Jane, Frost, G, 23, F, Nova Iorque
+John, Mundy, F, 25, M, Los Angeles
+Bob, Evans, H, 57, M, Nova Iorque
+John, Smith, M, 4, M, Chicago
+James, Williams, R, 100, M, Chicago
+Mary, Brown, H, 45, F, Dallas
+#####################################################
+cat echo.txt | tail -n+2 | sort
+ - 
+(1b) Exibir o conteúdo de echo.txt classificado pelo nome (não exibir a primeira linha).
+ - 
+Bob, Evans, H, 57, M, Nova Iorque
+James, Williams, R, 100, M, Chicago
+Jane, Frost, G, 23, F, Nova Iorque
+John, Mundy, F, 25, M, Los Angeles
+John, Smith, M, 4, M, Chicago
+Mary, Brown, H, 45, F, Dallas
+#####################################################
+grep 'John' echo.txt
+ - 
+(1c) Exibir apenas linhas que contenham (John)  
+ - 
+John, Mundy, F, 25, M, Los Angeles
+John, Smith, M, 4, M, Chicago
+#####################################################
+grep -v 'John' echo.txt
+ - 
+(1d) Exibir apenas linhas que não contenham (John)  
+ - 
+primeiro, último, meio, idade, sexo, cidade
+Jane, Frost, G, 23, F, Nova Iorque
+Bob, Evans, H, 57, M, Nova Iorque
+James, Williams, R, 100, M, Chicago
+Mary, Brown, H, 45, F, Dallas
+#####################################################
+grep '^J' echo.txt | grep -wE '\w{4}'
+ - 
+(1e) Exibir apenas linhas que contenham palavras de 4 letras começando com (j)  
+ - 
+Jane, Frost, G, 23, F, Nova Iorque
+John, Mundy, F, 25, M, Los Angeles
+John, Smith, M, 4, M, Chicago
+#####################################################
+sort -nk4 echo.txt
+ - 
+(1f) Ordenar as linhas pela idade  
+ - 
+primeiro, último, meio, idade, sexo, cidade
+John, Smith, M, 4, M, Chicago
+Jane, Frost, G, 23, F, Nova Iorque
+John, Mundy, F, 25, M, Los Angeles
+Mary, Brown, H, 45, F, Dallas
+Bob, Evans, H, 57, M, Nova Iorque
+James, Williams, R, 100, M, Chicago
+#####################################################
+sort -nk4 echo.txt | sed -n -e '2p;'
+ - 
+(1g) Descobrir a pessoa mais velha e mais jovem no dataset  
+ - 
+John, Smith, M, 4, M, Chicago
+James, Williams, R, 100, M, Chicago
+#####################################################
+cut -d ',' -f6 echo.txt
+ - 
+(1h) Listar as cidades presentes no dataset  
+ - 
+ cidade
+ Nova Iorque
+ Los Angeles
+ Nova Iorque
+ Chicago
+ Chicago
+ Dallas
+#####################################################
+sort -nk4 echo.txt | grep 'Nova Iorque'  | tail -n-1
+ - 
+(1i) Encontrar a pessoa mais velha que mora em Nova Iorque  
+ - 
+Bob, Evans, H, 57, M, Nova Iorque
+#####################################################
+wc -l echo.txt 
+ - 
+(2a) Quantidade de linhas do arquivo (echo.txt) 
+ - 
+7 echo.txt
+#####################################################
+wc -w  echo.txt
+ - 
+(2b) Quantidade de palavras 
+ - 
+45 echo.txt
+#####################################################
+wc -m  echo.txt
+ - 
+(2c) Quantidade de Bytes 
+ - 
+244 echo.txt
+#####################################################
+
+token
+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

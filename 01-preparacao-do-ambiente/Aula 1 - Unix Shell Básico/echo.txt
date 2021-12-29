@@ -1,0 +1,8 @@
+primeiro, último, meio, idade, sexo, cidade
+Jane, Frost, G, 23, F, Nova Iorque
+John, Mundy, F, 25, M, Los Angeles
+Bob, Evans, H, 57, M, Nova Iorque
+John, Smith, M, 4, M, Chicago
+James, Williams, R, 100, M, Chicago
+Mary, Brown, H, 45, F, Dallas
+
