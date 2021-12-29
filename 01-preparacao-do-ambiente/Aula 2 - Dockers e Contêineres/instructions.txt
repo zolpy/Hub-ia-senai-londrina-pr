@@ -1,0 +1,21 @@
+Olá pessoal, vamos iniciar nossos trabalhos com containers!!!
+
+
+1. O arquivo.zip contém um código que utilizaremos na tarefa de volumes, onde iremos executar em um container trabalhando ao mesmo tempo no local host.
+
+	a. Faça o download do arquivo para sua máquina local e execute a tarefa como apresentada nas aulas.
+
+	b. Crie um container ubuntu e efetue a instalação dos pacotes necessários para realização de alguns exercícios da aula passada 
+	(como escrita, envio de arquivos e execução de script bash)
+
+	c. Em seu diretório criado no raspberry py na aula passada, crie um novo diretório e deposite o print da tela logada no container 
+	com a mensagem de sucesso no upload dessa imagem.
+
+	d. Crie um container para cada tarefa.
+
+2. Desafio:
+
+	a. Utilizando a imagem NGINX Docker Image, crie um container que realize o deploy html de uma mensagem através do browser na porta 8080.
+	
+	b. Faça upload do arquivo gerado para a realização dessa tarefa bem como, a imagem do navegador com a mensagem.
+

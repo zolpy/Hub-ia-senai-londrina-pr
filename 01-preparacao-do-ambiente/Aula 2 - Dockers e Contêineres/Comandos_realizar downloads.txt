@@ -1,0 +1,135 @@
+scp ai2_fiep@200.145.159.38:/home/ai2_fiep/Exer_02/instructions.txt ~
+scp ai2_fiep@200.145.159.38:/home/ai2_fiep/Exer_02/aula2_cod.zip ~
+
+docker build -f Dockerfile -t uflaniano/team3 .
+------------------------------
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker images
+REPOSITORY                       TAG       IMAGE ID       CREATED         SIZE
+uflaniano/agora_vai              latest    8e586d3ac9ec   8 minutes ago   911MB
+claytondad/node                  latest    38f58705994d   2 days ago      913MB
+node                             latest    9c23a8242f8b   12 days ago     908MB
+uflaniano/agents_of_residencia   latest    9c23a8242f8b   12 days ago     908MB
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker run  -d -p 8080:3000 uflaniano/agora_vai
+c83c305ec001cd2554a2e15d5e103becfca8fc79bfbbec9621b03b6215c3d2d1
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker login
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in /home/brandao/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker push uflaniano/agora_vai
+Using default tag: latest
+The push refers to repository [docker.io/uflaniano/agora_vai]
+167bdb620a39: Pushed 
+dbd7b692f652: Pushed 
+311271778acb: Mounted from uflaniano/agents_of_residencia 
+3fecbd1300ea: Mounted from uflaniano/agents_of_residencia 
+443d37436905: Mounted from uflaniano/agents_of_residencia 
+1d59188d1ae5: Mounted from uflaniano/agents_of_residencia 
+6664df8b907f: Mounted from uflaniano/agents_of_residencia 
+193c69a58521: Mounted from uflaniano/agents_of_residencia 
+65bd1a7ee0f5: Mounted from uflaniano/agents_of_residencia 
+e637b6ee6754: Mounted from uflaniano/agents_of_residencia 
+22f8b5520ced: Mounted from uflaniano/agents_of_residencia 
+latest: digest: sha256:3aca6260c5e737da44d97ee9a3c1f2b230c25a96de456268241de12ea55d9ac0 size: 2634
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker container ps
+CONTAINER ID   IMAGE                 COMMAND       CREATED         STATUS         PORTS                                       NAMES
+c83c305ec001   uflaniano/agora_vai   "npm start"   3 minutes ago   Up 3 minutes   0.0.0.0:8080->3000/tcp, :::8080->3000/tcp   frosty_hopper
+0bd36ff1af9b   8e                    "npm start"   6 minutes ago   Up 6 minutes   3000/tcp                                    youthful_meitner
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker stop c83
+c83
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker docker 0b
+docker: 'docker' is not a docker command.
+See 'docker --help'
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker container stop 0bd
+0bd
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker ps -a
+CONTAINER ID   IMAGE                            COMMAND                  CREATED             STATUS                         PORTS     NAMES
+c83c305ec001   uflaniano/agora_vai              "npm start"              4 minutes ago       Exited (1) 55 seconds ago                frosty_hopper
+0bd36ff1af9b   8e                               "npm start"              7 minutes ago       Exited (1) 8 seconds ago                 youthful_meitner
+04577dc4d825   node                             "docker-entrypoint.s…"   23 minutes ago      Exited (1) 7 minutes ago                 cool_pasteur
+d21c8659eb0a   uflaniano/agents_of_residencia   "docker-entrypoint.s…"   44 minutes ago      Exited (0) 44 minutes ago                objective_knuth
+bb9f44836b92   claytondad/node                  "npm start"              50 minutes ago      Exited (1) 46 minutes ago                vigilant_maxwell
+79ed12aabec0   claytondad/node                  "npm start"              57 minutes ago      Exited (1) 50 minutes ago                youthful_shirley
+896e5cb7036f   uflaniano/agents_of_residencia   "docker-entrypoint.s…"   About an hour ago   Exited (0) About an hour ago             youthful_edison
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker images
+REPOSITORY                       TAG       IMAGE ID       CREATED          SIZE
+uflaniano/agora_vai              latest    8e586d3ac9ec   14 minutes ago   911MB
+claytondad/node                  latest    38f58705994d   2 days ago       913MB
+node                             latest    9c23a8242f8b   12 days ago      908MB
+uflaniano/agents_of_residencia   latest    9c23a8242f8b   12 days ago      908MB
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker rmi uflaniano/agents_of_residencia:latest 
+Untagged: uflaniano/agents_of_residencia:latest
+Untagged: uflaniano/agents_of_residencia@sha256:6c288ce65138858f287f23e90b4b4fb788a42ac690ee09ecba73c9e74f6be366
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker images
+REPOSITORY            TAG       IMAGE ID       CREATED          SIZE
+uflaniano/agora_vai   latest    8e586d3ac9ec   15 minutes ago   911MB
+claytondad/node       latest    38f58705994d   2 days ago       913MB
+node                  latest    9c23a8242f8b   12 days ago      908MB
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker rmi uflaniano/agora_vai:latest 
+Error response from daemon: conflict: unable to remove repository reference "uflaniano/agora_vai:latest" (must force) - container c83c305ec001 is using its referenced image 8e586d3ac9ec
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker rmi node
+Error response from daemon: conflict: unable to remove repository reference "node" (must force) - container 896e5cb7036f is using its referenced image 9c23a8242f8b
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker rmi -f node
+Untagged: node:latest
+Untagged: node@sha256:543c034446e58fb3991842e22db7a404f5feb1050cf6126cb551e03cae0e7ac1
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker images
+REPOSITORY            TAG       IMAGE ID       CREATED          SIZE
+uflaniano/agora_vai   latest    8e586d3ac9ec   16 minutes ago   911MB
+claytondad/node       latest    38f58705994d   2 days ago       913MB
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker rmi -f uflaniano/agora_vai:latest 
+Untagged: uflaniano/agora_vai:latest
+Untagged: uflaniano/agora_vai@sha256:3aca6260c5e737da44d97ee9a3c1f2b230c25a96de456268241de12ea55d9ac0
+Deleted: sha256:8e586d3ac9ec010a3b5387b388011c3afbebbf342a347493f3b5351cebaf00e3
+Deleted: sha256:28cd9a53f5d800a2451c50658fe46bfd1f1d0f58da527f3cdf70986cf995d3af
+Deleted: sha256:80b5bdaeaed1869ec1a0b9cb9ea82425f1e3aebe3926c5a9d78dc0d8bf4f9339
+Deleted: sha256:5f468dfe57db4dbfef4e9aab828fc7aa375cad830b5190b7245a0494e97cac04
+Deleted: sha256:6a7f56cc321f77920e8fb49daf8b06d11a6258cd10708bcfbfa63c7ece4df6d0
+Deleted: sha256:817c3d9e4f2bab94bd49ab0ca6f2e772c0f0a6b833d5375010d0d72efc28b19b
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker images
+REPOSITORY        TAG       IMAGE ID       CREATED       SIZE
+claytondad/node   latest    38f58705994d   2 days ago    913MB
+<none>            <none>    9c23a8242f8b   12 days ago   908MB
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker rmi 9c
+Error response from daemon: conflict: unable to delete 9c23a8242f8b (must be forced) - image is being used by stopped container 04577dc4d825
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker rmi -f  9c
+Deleted: sha256:9c23a8242f8b767d9719690aea3d86a9b86a45ff02fff49fd51fd622d687af45
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker images
+REPOSITORY        TAG       IMAGE ID       CREATED      SIZE
+claytondad/node   latest    38f58705994d   2 days ago   913MB
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker run -d -p 8080:3000 claytondad/node
+2c072f74c1d180135daee358e978b4e8109cb9036979f6ec795e596cc4ff18bb
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker ps
+CONTAINER ID   IMAGE             COMMAND       CREATED          STATUS          PORTS                                       NAMES
+2c072f74c1d1   claytondad/node   "npm start"   25 seconds ago   Up 24 seconds   0.0.0.0:8080->3000/tcp, :::8080->3000/tcp   happy_thompson
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker stop 2c
+2c
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker pull uflaniano/agora_vai
+Using default tag: latest
+latest: Pulling from uflaniano/agora_vai
+5e7b6b7bd506: Already exists 
+fd67d668d691: Already exists 
+1ae016bc2687: Already exists 
+0b0af05a4d86: Already exists 
+ca4689f0588c: Already exists 
+8c33de21d690: Already exists 
+f113b2c481db: Already exists 
+0f84649efc4d: Already exists 
+5990cbd9430a: Already exists 
+8ad2f33ce885: Already exists 
+3554695a778c: Already exists 
+Digest: sha256:3aca6260c5e737da44d97ee9a3c1f2b230c25a96de456268241de12ea55d9ac0
+Status: Downloaded newer image for uflaniano/agora_vai:latest
+docker.io/uflaniano/agora_vai:latest
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker images
+REPOSITORY            TAG       IMAGE ID       CREATED          SIZE
+uflaniano/agora_vai   latest    8e586d3ac9ec   18 minutes ago   911MB
+claytondad/node       latest    38f58705994d   2 days ago       913MB
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ docker run -d -p 8080:3000 uflaniano/agora_vai
+33c4442f95e39ed71abaf3c427bc2796ad38eec051f58f15d04677111ab2ce98
+(base) brandao@ubuntu-so:~/Documentos/SENAI-PR/Aulas/volume-exemplo$ 
