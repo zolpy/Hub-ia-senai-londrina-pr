@@ -4,7 +4,7 @@ from statsmodels.tsa.seasonal import seasonal_decompose
 import pandas as pd
 
 def chamaPapelao():
-    st.image('Files/Images/head.png')
+    st.image('https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/Sprints/fase2_anubis/Files/Images/head.png')
     st.title("File Upload Excel")
     st.subheader("File Upload Excel")
     excel_file = st.file_uploader("Upload file Excel", type=['xlsx', 'xls'])
