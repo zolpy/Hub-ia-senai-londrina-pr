@@ -10,3 +10,4 @@ statsmodels
 pandas
 streamlit
 seaborn
+openpyxl
