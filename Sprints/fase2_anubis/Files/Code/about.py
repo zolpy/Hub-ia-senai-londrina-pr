@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 
 def chamaAbout():
     st.subheader("Residencia Hub IA/ Fiep / SENAI-PR")
-    st.image('Files/Images/banner_hub.jpg', output_format="auto")
+    st.image('https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/Sprints/fase2_anubis/Files/Images/banner_hub.jpg', output_format="auto")
     components.html("""
             <div style="text-align: center;"><a href="https://www.senaipr.org.br/tecnologiaeinovacao/nossarede/hubia/"><img src="https://cdn3.iconfinder.com/data/icons/social-media-circle-long-shadow/1024/longShadow-256.png" alt="" width="36" height="36" /> </a> 
             <a href="https://br.linkedin.com/company/hubiasenai"><img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-512.png" alt="" width="36" height="36" /> </a> 
@@ -11,7 +11,7 @@ def chamaAbout():
             """)
     ############################################################
     st.subheader("Residente Cristian Griebler (Scrum MAster)")
-    st.image('Files/Images/banner_cristian.jpg', output_format="auto")
+    st.image('https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/Sprints/fase2_anubis/Files/Images/banner_cristian.jpg', output_format="auto")
     components.html("""
             <div style="text-align: center;">
             <a href="https://github.com/crisGriebler"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_github_2-512.png" alt="" width="36" height="36" /> </a> 
@@ -25,7 +25,7 @@ def chamaAbout():
     # index.carrega('Files/Code/index.html')
     # st.info("Built with Streamlit")
     # st.info("Brandão, Luiz @uflaniano")
-    st.image('Files/Images/banner_brandao.jpg', output_format="auto")
+    st.image('https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/Sprints/fase2_anubis/Files/Images/banner_brandao.jpg', output_format="auto")
     components.html("""
             <div style="text-align: center;">
             <a href="https://www.uflaniano.com.br/"><img src="https://cdn3.iconfinder.com/data/icons/social-media-circle-long-shadow/1024/longShadow-256.png" alt="" width="36" height="36" /> </a> 
