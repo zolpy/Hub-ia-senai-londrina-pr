@@ -5,7 +5,7 @@ import Files.Code.previsao as prev_hexano
 
 
 def chamaHexano():
-    st.image('Files/Images/head.png')
+    st.image('https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/Sprints/fase2_anubis/Files/Images/head.png')
     st.title("Dados caregados do Yahoo Finance")
     st.subheader("Hexano")
     menu = ["1 - Índices do petroleo", "2 - Principais moedas do mundo", "3 - Commodites", "4 - Proteína animal", "5 - Bolsa internacionais"]
