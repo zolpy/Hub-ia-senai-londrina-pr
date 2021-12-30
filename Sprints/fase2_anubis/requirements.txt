@@ -3,14 +3,10 @@ yfinance==0.1.67*
 statsmodels
 numpy
 pandas
-sklearn.preprocessing
-tensorflow.keras.models
-tensorflow.keras.layers
-matplotlib.pyplot 
+sklearn
+tensorflow
+matplotlib 
 seasonal_decompose
-statsmodels.tsa.seasonal
+statsmodels
 pandas
-streamlit.components.v1
-sklearn.preprocessing import StandardScaler
-tensorflow.keras.models import Sequential
-tensorflow.keras.layers import Dense, LSTM, Dropout
+streamlit
