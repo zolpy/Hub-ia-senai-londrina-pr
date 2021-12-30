@@ -1,13 +1,12 @@
-Streamlit==1.2.0
+streamlit==1.2.0
 yfinance
 statsmodels
-numpy as np
-pandas as pd
+numpy
+pandas
 sklearn.preprocessing
 tensorflow.keras.models
 tensorflow.keras.layers
 matplotlib.pyplot 
-streamlit
 seasonal_decompose
 statsmodels.tsa.seasonal
 pandas
