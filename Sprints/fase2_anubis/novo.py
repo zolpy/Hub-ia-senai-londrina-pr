@@ -7,7 +7,7 @@ import Files.Code.hexano as page_hexano
 import Files.Code.about as page_about
 ############################################################
 def main():
-    st.sidebar.image('./Files/Images/anubis.jpg')
+    st.sidebar.image('https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/Sprints/fase2_anubis/Files/Images/anubis.jpg')
     menu = ["Papelão", "Hexano", "About"]
     choice = st.sidebar.radio("Menu", menu)
 
