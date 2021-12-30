@@ -1,4 +1,4 @@
-Streamlit, version 1.2.0
+Streamlit==1.2.0
 yfinance
 statsmodels
 numpy as np
