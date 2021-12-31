@@ -2,8 +2,10 @@ import streamlit as st
 import Files.Code.graficos as graficos
 from statsmodels.tsa.seasonal import seasonal_decompose
 import pandas as pd
+import Files.Code.previsao as previsao
 
 def chamaPapelao():
+    global nome_coluna
     st.image('https://res.cloudinary.com/dmbamuk26/image/upload/v1640886908/Images/head_hub')
     st.title("File Upload Excel")
     st.subheader("File Upload Excel")
@@ -13,6 +15,7 @@ def chamaPapelao():
         file_details = {"Filename": excel_file.name, "FileType": excel_file.type, "FileSize": excel_file.size}
         st.write(file_details)
         df_papelao = pd.read_excel(excel_file)
+
         if ('Anguti' in df_papelao.columns) or ('Risi' in df_papelao.columns):
             # data_reserva = df_papelao['Date']
             df_papelao.set_index('Date', inplace=True)
@@ -75,14 +78,14 @@ def chamaPapelao():
                      'Opção 2: Risi')
                 )
                 if chute == 'Opção 1: Anguti':
-                    NOME_COLUNA = 'Anguti'
-                    decomposicao = seasonal_decompose(papelao[NOME_COLUNA], model='additive', extrapolate_trend='freq')
-                    graficos.chamaDecomposicao(decomposicao, NOME_COLUNA)
+                    nome_coluna = 'Anguti'
+                    decomposicao = seasonal_decompose(papelao[nome_coluna], model='additive', extrapolate_trend='freq')
+                    graficos.chamaDecomposicao(decomposicao, nome_coluna)
 
                 elif chute == 'Opção 2: Risi':
-                    NOME_COLUNA = 'Risi'
-                    decomposicao = seasonal_decompose(papelao[NOME_COLUNA], model='additive', extrapolate_trend='freq')
-                    graficos.chamaDecomposicao(decomposicao, NOME_COLUNA)
+                    nome_coluna = 'Risi'
+                    decomposicao = seasonal_decompose(papelao[nome_coluna], model='additive', extrapolate_trend='freq')
+                    graficos.chamaDecomposicao(decomposicao, nome_coluna)
 
             elif ('Anguti' in papelao.columns) and ('Risi' not in papelao.columns):
                 decomposicao = seasonal_decompose(papelao['Anguti'], model='additive', extrapolate_trend='freq')
@@ -99,6 +102,17 @@ def chamaPapelao():
             graficos.chamaCompara(papelao, padronizado)
             ############################################################
             graficos.chamaPrevisaoPapelao(papelao,padronizado)
+            ############################################################
+
+            ##Aqui chama a função de previsao
+            # previsao.chamaPrevisaoDias(item, procentagem_treino, steps, n_future, NOME_COLUNA)
+            # previsao.chamaPrevisaoDias(hexano, 0.67, 15, 10, 'RB=F')
+            procentagem_treino = st.number_input('Entre com a porcentagem de treino (ex.: 0.70)', value=.67)
+            steps = st.number_input('Entre com a quantidade de dias para trás (ex.: 15)', step=1, value=15)
+            n_future = st.number_input('Entre com a quantidade de dias para frente (ex.: 10)', step=1, value=10)
+            n_epoca = st.number_input('Entre com a quantidade de épocas para treino (ex.: 100)', step=1, value=20)
+            previsao.chamaPrevisaoPapelao(papelao, procentagem_treino, steps, n_future, n_epoca, nome_coluna)
+        ############################################################
         else:
             st.markdown("## Arquivo não tem as colunas do Risi e/ou Anguti")
             st.dataframe(df_papelao)
