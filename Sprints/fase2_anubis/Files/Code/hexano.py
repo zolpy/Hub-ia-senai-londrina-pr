@@ -1,10 +1,11 @@
 import yfinance as yf
 import streamlit as st
 import Files.Code.graficos as graficos
-import Files.Code.previsao as prev_hexano
+import Files.Code.previsao as previsao
 
 
 def chamaHexano():
+    start = '1900-01-01'
     st.image('https://res.cloudinary.com/dmbamuk26/image/upload/v1640886908/Images/head_hub')
     st.title("Dados caregados do Yahoo Finance")
     st.subheader("Hexano")
@@ -77,37 +78,44 @@ def chamaHexano():
     ############################################################
     start = st.date_input('A partir de qual data você quer puxar a base de dados?')
     fim = st.date_input('E vai até quando?')
-    intervalo = fim - start
-    st.markdown('Quantiade de dias: ')
-    intervalo = intervalo.days
-    st.write((intervalo))
-    hexano = yf.download(tickers, start=start, end=fim)["Close"]
-    st.dataframe(hexano)
-    ############################################################
-    st.markdown('### Realizando a dropagem: retira NaN')
-    hexano = hexano.dropna()
-    st.dataframe(hexano)
-    ############################################################
-    #Padronização dos dados
-    st.markdown('### Padronização dos dados')
-    retornos = hexano.pct_change()[1:]
-    st.dataframe(retornos)
-    ############################################################
-    # Gráfico Boxplot
-    # st.markdown('### Gráfico Boxplot')
-    graficos.chamaBoxplot(hexano)
-    ############################################################
-    st.markdown('### Matriz de correlação')
-    st.markdown('[Para saber mais clique aqui](https://www.delftstack.com/pt/howto/python-pandas/pandas-correlation-matrix/)', False)
-    st.dataframe(retornos.corr())
-    ############################################################
-    #Plota mapa de calor
-    st.markdown('[Para saber mais sobre correlação ***clique aqui***](http://2engenheiros.com/2020/12/08/mapa-de-calor-r/)', False)
-    graficos.chamaHeatmap(retornos)
-    graficos.chamaMediaMovel(retornos, op,intervalo)
+    if (start != '1900-01-01'):
 
-    ############################################################
-    ##Aqui chama a função de previsao
-    # prev_hexano.chamaPrevisaoHexano(hexano)
+        intervalo = fim - start
+        st.markdown('Quantiade de dias: ')
+        intervalo = intervalo.days
+        st.write((intervalo))
+        hexano = yf.download(tickers, start=start, end=fim)["Close"]
+        st.dataframe(hexano)
+        ############################################################
+        st.markdown('### Realizando a dropagem: retira NaN')
+        hexano = hexano.dropna()
+        st.dataframe(hexano)
+        ############################################################
+        #Padronização dos dados
+        st.markdown('### Padronização dos dados')
+        retornos = hexano.pct_change()[1:]
+        st.dataframe(retornos)
+        ############################################################
+        # Gráfico Boxplot
+        # st.markdown('### Gráfico Boxplot')
+        graficos.chamaBoxplot(hexano)
+        ############################################################
+        st.markdown('### Matriz de correlação')
+        st.markdown('[Para saber mais clique aqui](https://www.delftstack.com/pt/howto/python-pandas/pandas-correlation-matrix/)', False)
+        st.dataframe(retornos.corr())
+        ############################################################
+        #Plota mapa de calor
+        st.markdown('[Para saber mais sobre correlação ***clique aqui***](http://2engenheiros.com/2020/12/08/mapa-de-calor-r/)', False)
+        graficos.chamaHeatmap(retornos)
+        graficos.chamaMediaMovel(retornos, op,intervalo)
 
-
+        ############################################################
+        ##Aqui chama a função de previsao
+        # previsao.chamaPrevisaoDias(item, procentagem_treino, steps, n_future, NOME_COLUNA)
+        # previsao.chamaPrevisaoDias(hexano, 0.67, 15, 10, 'RB=F')
+        procentagem_treino = st.number_input('Entre com a porcentagem de treino (ex.: 0.70)', value=.67)
+        steps = st.number_input('Entre com a quantidade de dias para trás (ex.: 15)', step=1, value=15)
+        n_future = st.number_input('Entre com a quantidade de dias para frente (ex.: 10)', step=1, value=10)
+        n_epoca = st.number_input('Entre com a quantidade de épocas para treino (ex.: 100)', step=1, value=20)
+        coluna = 'RB=F'
+        previsao.chamaPrevisaoHexano(hexano, procentagem_treino, steps, n_future, n_epoca)
