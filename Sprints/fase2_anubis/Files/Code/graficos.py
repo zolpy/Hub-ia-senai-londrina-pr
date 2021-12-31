@@ -88,6 +88,7 @@ def chamaBoxplot(papelao):
     ax.set_title('Boxplots', fontsize=18)
     ax.set_xlabel('Índices', fontsize=14)
     ax.set_ylabel('Valores', fontsize=14)
+    ax.grid()
     st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot()
 ###################################################################
