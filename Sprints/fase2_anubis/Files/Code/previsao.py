@@ -216,9 +216,9 @@ def chamaPrevisaoPapelao(papelao, procentagem_treino, steps, n_future, n_epoca, 
     st.table(coluna_dropada.head())
     ############################################################
     # plotar informação
-    st.markdown('### Valores coluna_dropada')
+    st.markdown('### Valores coluna_dropada: ' +nome_coluna)
     plt.figure(figsize=(16, 8))
-    plt.title('Valores coluna_dropada')
+    plt.title('Valores coluna_dropada: ' +nome_coluna)
     plt.plot(coluna_dropada)
     plt.grid()
     plt.xlabel('Data')
@@ -233,12 +233,12 @@ def chamaPrevisaoPapelao(papelao, procentagem_treino, steps, n_future, n_epoca, 
 
     qtd_linhas_teste = qtd_linhas - qtd_linhas_treino
 
-    info = (
-        f"qtd_linhas: {qtd_linhas} | "
-        f"Linhas treino vai da 0:{qtd_linhas_treino} | "
-        f"Linhas teste vai da {qtd_linhas_treino}:{qtd_linhas_treino + qtd_linhas_teste} | "
-        f"Total de linhas:  {qtd_linhas}"
-    )
+    # info = (
+    #     f"qtd_linhas: {qtd_linhas} | "
+    #     f"Linhas treino vai da 0:{qtd_linhas_treino} | "
+    #     f"Linhas teste vai da {qtd_linhas_treino}:{qtd_linhas_treino + qtd_linhas_teste} | "
+    #     f"Total de linhas:  {qtd_linhas}"
+    # )
     # st.write(info)
     ############################################################
     # separa em treino e teste
@@ -291,13 +291,13 @@ def chamaPrevisaoPapelao(papelao, procentagem_treino, steps, n_future, n_epoca, 
     # Treinamento do modelo
 
     validation = model.fit(X_train, Y_train, validation_data=(X_teste, Y_teste), epochs=n_epoca, batch_size=steps,
-                           verbose=2)
+                           verbose=1)
     # st.write(validation)
     ############################################################
-    st.markdown('### Valores para Training loss e Validation loss')
+    st.markdown('### Valores para Training loss e Validation loss: ' +nome_coluna)
     plt.plot(validation.history['loss'], label='Training loss')
     plt.plot(validation.history['val_loss'], label='Validation loss')
-    plt.title('Valores para Training loss e Validation loss')
+    plt.title('Valores para Training loss e Validation loss: ' +nome_coluna)
     plt.grid()
     plt.legend()
     st.pyplot()
@@ -308,12 +308,11 @@ def chamaPrevisaoPapelao(papelao, procentagem_treino, steps, n_future, n_epoca, 
     # st.write(prev)
     ############################################################
     ############################################################
-    st.markdown('### Valores para preço do papelao previsto')
+    st.markdown('### Valores para preço do papelao previsto: ' +nome_coluna)
     plt.figure(figsize=(16, 8))
-    # plt.plot(df_papelao['Anguti'][30:40])
-    # plt.plot(coluna_hexano_dropado)
     plt.plot(prev)
-    plt.legend(['preco do papelao', 'preço do papelao previsto'])
+    plt.legend(['preco do papelao: ' +nome_coluna])
+    plt.title('Valores para preço do papelao previsto: ' +nome_coluna)
     plt.grid()
     st.pyplot()
     ############################################################
@@ -384,22 +383,23 @@ def chamaPrevisaoPapelao(papelao, procentagem_treino, steps, n_future, n_epoca, 
     for i in predict_dates:
         forecast_dates.append(i.date())
 
-    df_forecast = pd.DataFrame({'data_pregao': np.array(forecast_dates), 'RB=F': list_output_prev})
+    df_forecast = pd.DataFrame({'data_pregao': np.array(forecast_dates), nome_coluna: list_output_prev})
     df_forecast['data_pregao'] = pd.to_datetime(df_forecast['data_pregao'])
 
     df_forecast = df_forecast.set_index(pd.DatetimeIndex(df_forecast['data_pregao'].values))
     df_forecast.drop('data_pregao', axis=1, inplace=True)
 
-    st.markdown('### Valores para df_forecast (preço previsto)')
+    st.markdown('### Valores para df_forecast (preço previsto): ' +nome_coluna)
     st.write(df_forecast)
     ############################################################
-    st.markdown('### Valores para df_forecast (preço previsto) na tabela')
+    st.markdown('### Valores para df_forecast (preço previsto) na tabela: ' +nome_coluna)
 
     plt.figure(figsize=(16, 8))
     # plt.plot(df_papelao['Anguti'][30:40])
     plt.plot(papelao[nome_coluna])
     plt.plot(df_forecast[nome_coluna])
     plt.legend(['preco do papelao ' + nome_coluna + ' (observado)', 'preço papelão ' + nome_coluna + ' (previsto)'])
+    plt.title('Valores para df_forecast (preço previsto) na tabela: ' +nome_coluna)
     plt.grid()
     st.pyplot()
     # plt.show()
