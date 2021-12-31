@@ -88,12 +88,14 @@ def chamaPapelao():
                     graficos.chamaDecomposicao(decomposicao, nome_coluna)
 
             elif ('Anguti' in papelao.columns) and ('Risi' not in papelao.columns):
-                decomposicao = seasonal_decompose(papelao['Anguti'], model='additive', extrapolate_trend='freq')
-                graficos.chamaDecomposicao(decomposicao, 'Anguti')
+                nome_coluna = 'Anguti'
+                decomposicao = seasonal_decompose(papelao[nome_coluna], model='additive', extrapolate_trend='freq')
+                graficos.chamaDecomposicao(decomposicao, nome_coluna)
 
             elif ('Anguti' not in papelao.columns) and ('Risi' in papelao.columns):
-                decomposicao = seasonal_decompose(papelao['Risi'], model='additive', extrapolate_trend='freq')
-                graficos.chamaDecomposicao(decomposicao, 'Risi')
+                nome_coluna = 'Risi'
+                decomposicao = seasonal_decompose(papelao[nome_coluna], model='additive', extrapolate_trend='freq')
+                graficos.chamaDecomposicao(decomposicao, nome_coluna)
             ############################################################
             # chama a função Heatmap
             graficos.chamaHeatmap(padronizado)
@@ -108,8 +110,8 @@ def chamaPapelao():
             # previsao.chamaPrevisaoDias(item, procentagem_treino, steps, n_future, NOME_COLUNA)
             # previsao.chamaPrevisaoDias(hexano, 0.67, 15, 10, 'RB=F')
             procentagem_treino = st.number_input('Entre com a porcentagem de treino (ex.: 0.70)', value=.67)
-            steps = st.number_input('Entre com a quantidade de dias para trás (ex.: 15)', step=1, value=15)
-            n_future = st.number_input('Entre com a quantidade de dias para frente (ex.: 10)', step=1, value=10)
+            steps = st.number_input('Entre com a quantidade de dias para trás (ex.: 15)', step=1, value=8)
+            n_future = st.number_input('Entre com a quantidade de dias para frente (ex.: 10)', step=1, value=3)
             n_epoca = st.number_input('Entre com a quantidade de épocas para treino (ex.: 100)', step=1, value=20)
             previsao.chamaPrevisaoPapelao(papelao, procentagem_treino, steps, n_future, n_epoca, nome_coluna)
         ############################################################
