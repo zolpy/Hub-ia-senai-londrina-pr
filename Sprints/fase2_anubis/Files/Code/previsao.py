@@ -25,7 +25,6 @@ def chamaPrevisaoHexano(hexano):
     plt.grid()
     plt.xlabel('Data')
     plt.ylabel('Valores')
-    st.pyplot()
     ############################################################
     # verifica a quantidade de linhas
 
@@ -50,7 +49,7 @@ def chamaPrevisaoHexano(hexano):
     train = df_scaled[:qtd_linhas_treino]
     test = df_scaled[qtd_linhas_treino: qtd_linhas_treino + qtd_linhas_teste]
 
-    # print(len(train), len(test))
+    print(len(train), len(test))
     ############################################################
     # convert an array of values into a df matrix
 
@@ -88,7 +87,7 @@ def chamaPrevisaoHexano(hexano):
     model.add(Dense(1))
 
     model.compile(optimizer='adam', loss='mse')
-    # st.write(model.summary())
+    st.write(model.summary())
     ############################################################
     # Treinamento do modelo
 
@@ -104,7 +103,7 @@ def chamaPrevisaoHexano(hexano):
     # Fazendo a previsão
     prev = model.predict(X_teste)
     prev = scaler.inverse_transform(prev)
-    # st.write(prev)
+    st.write(prev)
     ############################################################
     ############################################################
     plt.figure(figsize=(16, 8))
@@ -117,23 +116,26 @@ def chamaPrevisaoHexano(hexano):
     ############################################################
     # previsão para os proximos dias
     tamanho_teste = len(test)
-    # st.write(tamanho_teste)
+    st.write(tamanho_teste)
     ############################################################
     # Pegar os ultimos dias que sao o tamanho do meu step
+
     days_input_steps = tamanho_teste - steps
-    # st.write(days_input_steps)
+    st.write(days_input_steps)
     ############################################################
     # transforma em array
+
     input_steps = test[days_input_steps:]
     input_steps = np.array(input_steps).reshape(1, -1)
-    # st.write(input_steps)
+    st.write(input_steps)
     ############################################################
     # Transformar em lista
     list_output_steps = list(input_steps)
     list_output_steps = list_output_steps[0].tolist()
-    # st.write(list_output_steps)
+    st.write(list_output_steps)
     ############################################################
-    # loop para prever os proximos dias
+    # loop para prever os proximos meses
+
     pred_output = []
     i = 0
     n_future = 10
@@ -162,19 +164,19 @@ def chamaPrevisaoHexano(hexano):
             i = i + 1
 
     # print(pred_output)
-    # st.write(pred_output)
+    st.write(pred_output)
     ############################################################
     # Transforma a saida
     prev = scaler.inverse_transform(pred_output)
     prev = np.array(prev).reshape(1, -1)
     list_output_prev = list(prev)
-    list_output_prev = list_output_prev[0].tolist()
-    # st.write(list_output_prev)
+    list_output_prev = prev[0].tolist()
+    st.write(list_output_prev)
     ############################################################
     # pegar as datas de previsão
     dates = pd.to_datetime(hexano.index)
     predict_dates = pd.date_range(list(dates)[-1] + pd.DateOffset(1), periods=10, freq='b').tolist()
-    # st.write(predict_dates)
+    st.write(predict_dates)
     ############################################################
     # criar dataframe de previsão
 
@@ -196,7 +198,6 @@ def chamaPrevisaoHexano(hexano):
     plt.plot(df_forecast['RB=F'])
     plt.legend(['preco do hexano', 'preço previsto'])
     plt.grid()
-    st.pyplot()
     # plt.show()
     ############################################################
 
