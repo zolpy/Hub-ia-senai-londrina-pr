@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 
-def chamaPrevisaoHexano(hexano):
+def chamaPrevisaoHexano(hexano,procentagem_treino, steps, n_future, n_epoca):
     st.markdown(""" ### Aqui começa os dados da previsão do Hexano""")
     coluna_hexano = hexano[['RB=F']]
     coluna_hexano_dropado = coluna_hexano.dropna()
@@ -19,18 +19,20 @@ def chamaPrevisaoHexano(hexano):
     st.table(coluna_hexano_dropado.head())
     ############################################################
     # plotar informação
+    st.markdown('### Valores coluna_hexano_dropado')
     plt.figure(figsize=(16, 8))
     plt.title('Valores coluna_hexano_dropado')
     plt.plot(coluna_hexano_dropado)
     plt.grid()
     plt.xlabel('Data')
     plt.ylabel('Valores')
+    st.pyplot()
     ############################################################
     # verifica a quantidade de linhas
 
     qtd_linhas = len(coluna_hexano_dropado)
 
-    qtd_linhas_treino = round(.67 * qtd_linhas)
+    qtd_linhas_treino = round(procentagem_treino * qtd_linhas)
 
     qtd_linhas_teste = qtd_linhas - qtd_linhas_treino
 
@@ -49,7 +51,7 @@ def chamaPrevisaoHexano(hexano):
     train = df_scaled[:qtd_linhas_treino]
     test = df_scaled[qtd_linhas_treino: qtd_linhas_treino + qtd_linhas_teste]
 
-    print(len(train), len(test))
+    # print(len(train), len(test))
     ############################################################
     # convert an array of values into a df matrix
 
@@ -63,7 +65,7 @@ def chamaPrevisaoHexano(hexano):
 
         # gerando dados de treino e teste
 
-    steps = 15
+    # steps = 15
     X_train, Y_train = create_df(train, steps)
     X_teste, Y_teste = create_df(test, steps)
 
@@ -87,15 +89,17 @@ def chamaPrevisaoHexano(hexano):
     model.add(Dense(1))
 
     model.compile(optimizer='adam', loss='mse')
-    st.write(model.summary())
+    # st.write(model.summary())
     ############################################################
     # Treinamento do modelo
 
-    validation = model.fit(X_train, Y_train, validation_data=(X_teste, Y_teste), epochs=100, batch_size=steps,verbose=2)
+    validation = model.fit(X_train, Y_train, validation_data=(X_teste, Y_teste), epochs=n_epoca, batch_size=steps,verbose=2)
     # st.write(validation)
     ############################################################
+    st.markdown('### Valores para Training loss e Validation loss')
     plt.plot(validation.history['loss'], label='Training loss')
     plt.plot(validation.history['val_loss'], label='Validation loss')
+    plt.title('Valores para Training loss e Validation loss')
     plt.grid()
     plt.legend()
     st.pyplot()
@@ -103,9 +107,10 @@ def chamaPrevisaoHexano(hexano):
     # Fazendo a previsão
     prev = model.predict(X_teste)
     prev = scaler.inverse_transform(prev)
-    st.write(prev)
+    # st.write(prev)
     ############################################################
     ############################################################
+    st.markdown('### Valores para preço do hexano previsto')
     plt.figure(figsize=(16, 8))
     # plt.plot(df_papelao['Anguti'][30:40])
     # plt.plot(coluna_hexano_dropado)
@@ -116,29 +121,26 @@ def chamaPrevisaoHexano(hexano):
     ############################################################
     # previsão para os proximos dias
     tamanho_teste = len(test)
-    st.write(tamanho_teste)
+    # st.write(tamanho_teste)
     ############################################################
     # Pegar os ultimos dias que sao o tamanho do meu step
-
     days_input_steps = tamanho_teste - steps
-    st.write(days_input_steps)
+    # st.write(days_input_steps)
     ############################################################
     # transforma em array
-
     input_steps = test[days_input_steps:]
     input_steps = np.array(input_steps).reshape(1, -1)
-    st.write(input_steps)
+    # st.write(input_steps)
     ############################################################
     # Transformar em lista
     list_output_steps = list(input_steps)
     list_output_steps = list_output_steps[0].tolist()
-    st.write(list_output_steps)
+    # st.write(list_output_steps)
     ############################################################
-    # loop para prever os proximos meses
-
+    # loop para prever os proximos dias
     pred_output = []
     i = 0
-    n_future = 10
+    # n_future = 10
     while (i < n_future):
         if (len(list_output_steps) > steps):
             input_steps = np.array(list_output_steps[1:])
@@ -164,19 +166,19 @@ def chamaPrevisaoHexano(hexano):
             i = i + 1
 
     # print(pred_output)
-    st.write(pred_output)
+    # st.write(pred_output)
     ############################################################
     # Transforma a saida
     prev = scaler.inverse_transform(pred_output)
     prev = np.array(prev).reshape(1, -1)
     list_output_prev = list(prev)
-    list_output_prev = prev[0].tolist()
-    st.write(list_output_prev)
+    list_output_prev = list_output_prev[0].tolist()
+    # st.write(list_output_prev)
     ############################################################
     # pegar as datas de previsão
     dates = pd.to_datetime(hexano.index)
-    predict_dates = pd.date_range(list(dates)[-1] + pd.DateOffset(1), periods=10, freq='b').tolist()
-    st.write(predict_dates)
+    predict_dates = pd.date_range(list(dates)[-1] + pd.DateOffset(1), periods=n_future, freq='b').tolist()
+    # st.write(predict_dates)
     ############################################################
     # criar dataframe de previsão
 
@@ -190,23 +192,17 @@ def chamaPrevisaoHexano(hexano):
     df_forecast = df_forecast.set_index(pd.DatetimeIndex(df_forecast['data_pregao'].values))
     df_forecast.drop('data_pregao', axis=1, inplace=True)
 
+    st.markdown('### Valores para df_forecast (preço previsto)')
     st.write(df_forecast)
     ############################################################
+    st.markdown('### Valores para df_forecast (preço previsto) na tabela')
+
     plt.figure(figsize=(16, 8))
     # plt.plot(df_papelao['Anguti'][30:40])
     plt.plot(hexano['RB=F'])
     plt.plot(df_forecast['RB=F'])
     plt.legend(['preco do hexano', 'preço previsto'])
     plt.grid()
+    st.pyplot()
     # plt.show()
-    ############################################################
-
-    ############################################################
-
-    ############################################################
-
-    ############################################################
-
-    ############################################################
-
     ############################################################
