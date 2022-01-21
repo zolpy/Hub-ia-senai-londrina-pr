@@ -140,4 +140,10 @@ Resolução do exercicio da (Aula8-Manipulacao-de-dados-utilizando-Pandas)
 <br>--------------------------------<br>
 </div>  
 
+<h3>03-introducao-a-estatistica</h3>  
+Resolução do exercicio da (Aula1-Projeto de Classes)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/03-introducao-a-estatistica/exercicios/aula1"><img width="36" height="36" src="https://www.pngkey.com/png/full/481-4819402_nasa-logo-png-transparent-logo-nasa-hd-png.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>  
   
