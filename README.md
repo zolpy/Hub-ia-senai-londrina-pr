@@ -32,7 +32,7 @@ Publicações
 
 Publiquei um livro recentemente pela editora Viseu (As Crônicas de Mondor e o Portal do Tempo). Esse é o primeiro da trilogia, o segundo já está escrito, o terceiro está meio parado devido as atividades do HUB, mas espero terminar antes de 2023
 <div style="text-align: center">
-<a href="https://www.eviseu.com/pt/livros/2035/as-cronicas-de-mondor-e-o-portal-do-tempo/"><img width="36" height="36" src="https://www.eviseu.com/i/logo-azul.png" alt=""> </a>
+<a href="https://www.eviseu.com/pt/livros/2035/as-cronicas-de-mondor-e-o-portal-do-tempo/"><img width="36" height="36" src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/book-256.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>
 
