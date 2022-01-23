@@ -147,3 +147,9 @@ Resolução do exercicio da (Aula1-Projeto de Classes)
 <br>--------------------------------<br>
 </div>  
   
+Resolução do exercicio da (Aula2-Análise Bidimensional)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/03-introducao-a-estatistica/exercicios/aula2"><img width="36" height="36" src="https://tmfilho.github.io/pyestbook/_static/logo-arte.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>  
+  
