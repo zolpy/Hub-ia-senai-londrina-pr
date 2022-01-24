@@ -153,3 +153,9 @@ Resolução do exercicio da (Aula2-Análise Bidimensional)
 <br>--------------------------------<br>
 </div>  
   
+ <h3>04-machine-learning</h3>  
+Resolução do exercicio da (Aula1-Regressão Linear)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula1"><img width="36" height="36" src="https://cdn-icons-png.flaticon.com/512/2103/2103640.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>   
