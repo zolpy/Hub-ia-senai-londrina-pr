@@ -159,3 +159,16 @@ Resolução do exercicio da (Aula1-Regressão Linear)
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula1"><img width="36" height="36" src="https://cdn-icons-png.flaticon.com/512/2103/2103640.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>   
+  
+  
+NÃO TEVE exercicio (Aula2-Métricas de Avaliação de Divisão de Dados)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula2"><img width="36" height="36" src="https://contentools.com.br/wp-content/uploads/2016/02/manufacturing-metrics.jpg" alt=""> </a>
+<br>--------------------------------<br>
+</div>   
+
+  exercicio (Aula3-classificador_bayesiano)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula3"><img width="36" height="36" src="https://cdn.shortpixel.ai/spai/w_912+q_+ret_img+to_webp/https://iaexpert.academy/wp-content/uploads/2019/04/image-10.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>   
