@@ -167,8 +167,14 @@ NÃO TEVE exercicio (Aula2-Métricas de Avaliação de Divisão de Dados)
 <br>--------------------------------<br>
 </div>   
 
-  exercicio (Aula3-classificador_bayesiano)
+ Exercicio (Aula3-classificador_bayesiano)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula3"><img width="36" height="36" src="https://cdn.shortpixel.ai/spai/w_912+q_+ret_img+to_webp/https://iaexpert.academy/wp-content/uploads/2019/04/image-10.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>   
+  
+ Exercicio (Aula4-K-Nearest Neighbors (K-NN))
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula4/resp_knn.ipynb"><img width="36" height="36" src="https://www.researchgate.net/publication/301299690/figure/fig8/AS:362163605655552@1463357940708/KNN-algorithm-diagram.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>     
