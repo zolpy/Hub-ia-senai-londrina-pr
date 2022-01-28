@@ -175,6 +175,12 @@ NÃO TEVE exercicio (Aula2-Métricas de Avaliação de Divisão de Dados)
   
  Exercicio (Aula4-K-Nearest Neighbors (K-NN))
 <div style="text-align: center">
-<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula4/resp_knn.ipynb"><img width="36" height="36" src="https://www.researchgate.net/publication/301299690/figure/fig8/AS:362163605655552@1463357940708/KNN-algorithm-diagram.png" alt=""> </a>
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula4"><img width="36" height="36" src="https://www.researchgate.net/publication/301299690/figure/fig8/AS:362163605655552@1463357940708/KNN-algorithm-diagram.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>     
+
+ Exercicio (Aula5-Perceptron)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula5"><img width="36" height="36" src="https://www.pyimagedata.com/wp-content/uploads/2020/10/Cover.jpg" alt=""> </a>
 <br>--------------------------------<br>
 </div>     
