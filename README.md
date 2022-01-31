@@ -184,3 +184,12 @@ NÃO TEVE exercicio (Aula2-Métricas de Avaliação de Divisão de Dados)
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula5"><img width="36" height="36" src="https://www.pyimagedata.com/wp-content/uploads/2020/10/Cover.jpg" alt=""> </a>
 <br>--------------------------------<br>
 </div>     
+
+ Exercicio (Aula6-Pytorch)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula6"><img width="36" height="36" src="https://pytorch.org/assets/images/pytorch-logo.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>     
+
+  
+  
