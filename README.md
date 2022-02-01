@@ -154,38 +154,38 @@ Resolução do exercicio da (Aula2-Análise Bidimensional)
 </div>  
   
  <h3>04-machine-learning</h3>  
-Resolução do exercicio da (Aula1-Regressão Linear)
+Resolução do exercicio da (Aula1-Conceitos sobre Regressão Linear/Logistica)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula1"><img width="36" height="36" src="https://cdn-icons-png.flaticon.com/512/2103/2103640.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>   
   
   
-NÃO TEVE exercicio (Aula2-Métricas de Avaliação de Divisão de Dados)
+NÃO TEVE exercicio (Aula2-Conceitos sobre Métricas de Avaliação e Divisão de Dados)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula2"><img width="36" height="36" src="https://contentools.com.br/wp-content/uploads/2016/02/manufacturing-metrics.jpg" alt=""> </a>
 <br>--------------------------------<br>
 </div>   
 
- Exercicio (Aula3-classificador_bayesiano)
+ Exercicio (Aula3-Conceitos sobre Classificador Bayesiano)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/tree/main/04-machine-learning/exercicios/aula3"><img width="36" height="36" src="https://cdn.shortpixel.ai/spai/w_912+q_+ret_img+to_webp/https://iaexpert.academy/wp-content/uploads/2019/04/image-10.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>   
   
- Exercicio (Aula4-K-Nearest Neighbors (K-NN))
+ Exercicio (Aula4-K-Conceitos sobre K-NN)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula4"><img width="36" height="36" src="https://www.researchgate.net/publication/301299690/figure/fig8/AS:362163605655552@1463357940708/KNN-algorithm-diagram.png" alt=""> </a>
 <br>--------------------------------<br>
 </div>     
 
- Exercicio (Aula5-Perceptron)
+ Exercicio (Aula5-Conceitos sobre Perceptron-MLP)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula5"><img width="36" height="36" src="https://www.pyimagedata.com/wp-content/uploads/2020/10/Cover.jpg" alt=""> </a>
 <br>--------------------------------<br>
 </div>     
 
- Exercicio (Aula6-Pytorch)
+ Exercicio (Aula6-Aula prática Pytorch-MLP)
 <div style="text-align: center">
 <a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula6"><img width="36" height="36" src="https://pytorch.org/assets/images/pytorch-logo.png" alt=""> </a>
 <br>--------------------------------<br>
