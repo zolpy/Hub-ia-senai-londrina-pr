@@ -191,5 +191,9 @@ NÃO TEVE exercicio (Aula2-Conceitos sobre Métricas de Avaliação e Divisão d
 <br>--------------------------------<br>
 </div>     
 
-  
+ Exercicio (Aula 7 - Conceitos sobre SVM)
+<div style="text-align: center">
+<a href="https://github.com/zolpy/Hub-ia-senai-londrina-pr/blob/main/04-machine-learning/exercicios/aula7"><img width="36" height="36" src="https://i2.wp.com/r-posts.com/wp-content/uploads/2017/04/svm2.png" alt=""> </a>
+<br>--------------------------------<br>
+</div>      
   
