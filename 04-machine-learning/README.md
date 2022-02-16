@@ -16,7 +16,14 @@
 
 * Aula 6 - Aula prática Pytorch-MLP ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula6))
 
-* Aula 6b - Aula prática MLP-Dropout ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula7))
+* Aula 6b - Aula prática MLP-Dropout ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula6b))
 
+* Aula 7 - Conceitos sobre SVM ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/slides/aula7/svm.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula7/SVM.ipynb))
 
-* Aula 7 - Conceitos sobre SVM ([Slides](...)) ([Exercícios](...))
+* Aula 8 - Conceitos sobre k-Médias e GMM ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/slides/aula8)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula8/kmeans_gmm.ipynb))
+
+* Aula 9 - Conceitos sobre OPF ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/slides/aula9/opf.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula9/OPF.ipynb))
+
+* Aula 10 - Conceitos sobre AD ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/slides/aula10/ad.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula10))
+
+* Aula 11 - Aula prática - aplicação real (AVC) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula11))
