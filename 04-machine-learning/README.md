@@ -28,8 +28,16 @@
 
 * Aula 11 - Aula prática - aplicação real (AVC) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula11))
 
+* Aula 12 - Aula prática - aplicação real (SPAM) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula12))
+
+* Aula 13 - Aula prática - aplicação real (Hospital) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/exercicios/aula13))
+
+
 # Machine Learning/2 - Python
 
 * Aula 1 - Conceitos sobre PCA ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula1/pca.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula1_PCA/PCA.ipynb)) 
 
 * Aula 2 - Conceitos sobre LDA/MDA ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula2/lda.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula2_LDA/LDA.ipynb)) 
+
+* Aula 3 - Conceitos sobre KPCA ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula3/kpca.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula3_kernelPCA/kernelPCA.ipynb)) 
+* 
