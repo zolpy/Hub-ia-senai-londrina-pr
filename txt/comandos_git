@@ -1,0 +1,66 @@
+(git init) > Para transformar o diretório atual em um repositório do Git, basta executar o comando git init
+(base) brandao@ubuntu-so:~$ git init
+--------------------------------------------
+(git status) > verificar se está versionado
+(base) brandao@ubuntu-so:~$ git status
+--------------------------------------------
+(git add <file.txt>) > Para que o arquivo seja rastreado, devemos executar o seguinte este comando
+(base) brandao@ubuntu-so:~$ git add <file>
+--------------------------------------------
+git commit -m "Arquivo inicial de citacoes"
+--------------------------------------------
+git log
+--------------------------------------------
+Devemos agora apontar o repositório da nossa máquina para o repositório do GitHub.
+criar um repositorio no git com o mesmo nome
+no mesmo diretorio na sua maquina digite
+(git remote add origin https://github.com/fulanodasilva/citacoes.git)
+Com o comando anterior, apontamos o nome origin para o repositório
+lá do GitHub.
+--------------------------------------------
+(git push origin master)
+
+Com o comando anterior, enviamos as alterações para o repositório re-
+moto configurado com o nome origin .
+Forneça seu usuário e senha do GitHub quando solicitado. Deverá apa-
+recer algo semelhante à seguinte saída:
+Username for ’https://github.com’: fulanodasilva
+Password for ’https://fulanodasilva@github.com’:
+--------------------------------------------
+Vamos executar o comando para rastrear e comitar os arquivos de uma vez só:
+(git commit -am "Script de troca de banner")
+--------------------------------------------
+Exposição semestral de dados: A cada dois anos, nas Reuniões Conjuntas de Estatística, a Seção de Gráficos e a Seção de Computação se unem para patrocinar uma Sessão de Pôster especial chamada The Data Exposition, mas mais comumente conhecida como The Data Expo. Todos os trabalhos apresentados nesta Sessão de Pôster são relatórios de análises de um conjunto de dados comum fornecido para a ocasião. Além disso, todos os artigos apresentados na sessão são encorajados a relatar o uso de métodos gráficos empregados durante o desenvolvimento de suas análises e a usar gráficos para transmitir suas descobertas. Desempenho pontual da companhia aérea: você já esteve preso em um aeroporto porque seu voo atrasou ou foi cancelado e se perguntou se poderia ter previsto isso se tivesse mais dados? Esta é sua chance de descobrir. Os dados: os dados consistem em detalhes de chegada e partida de voos para todos os voos comerciais dentro dos EUA, de outubro de 1987 a abril de 2008. Este é um grande conjunto de dados: há quase 120 milhões de registros no total e ocupa 1,6 gigabytes de espaço compactado e 12 gigabytes quando não compactado. Os dados vêm originalmente da RITA, onde são descritos em detalhes. Você pode baixar os dados lá ou dos arquivos csv compactados listados abaixo. Esses arquivos têm variáveis ​​deriváveis ​​removidas, são empacotados em blocos anuais e foram mais compactados do que os originais. Descrições de variáveis: 
+
+Nome Descrição 
+1 Ano 1987-2008 
+2 Mês 1-12 
+3 DayofMonth 1-31 
+4 DayOfWeek 1 (segunda-feira) - 7 (domingo) 
+5 DepTime hora de partida real (local, hhm m) 
+6 CRSDepTime hora de partida programada (local, hhmm) 
+7 ArrTime hora de chegada real (local, hhmm) 
+8 CRSArrTime hora de chegada programada (local, hhmm) 
+9 Código exclusivo da transportadora UniqueCarrier 
+10 FlightNum número de voo 
+11 TailNum avião cauda número 
+12 ActualElapsedTime em minutos 
+13 CRSElapsedTime em minutos 
+14 AirTime em minutos 
+15 ArrDelay Atraso na chegada, em minutos 
+16 Atraso na partida DepDelay, em minutos 
+17 Código do aeroporto IATA Origem 
+18 Destino Código IATA aeroporto 
+19 Distância em milhas 
+20 TaxiIn taxi in time, in minutes 
+21 TaxiOut taxi out time in minutes 
+22 Cancelado foi o voo cancelado ? 
+23 CancelamentoCódigo de motivo para cancelamento (A = operadora, B = clima, C = NAS, D = segurança) 
+24 Desviado 1 = sim, 0 = não 
+25 Atraso da operadora em minutos 
+26 Atraso do tempo em minutos 
+27 Atraso NAS em minutos 
+28 Atraso de segurança em minutos 
+29 Atraso de segurança atrasado em minutos
+
+

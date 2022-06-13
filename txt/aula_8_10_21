@@ -1,0 +1,13 @@
+FROM debian:latest
+
+LABEL maintainer ="Luiz"
+
+RUN apt-get update && apt-get install -y apache2 && api-get clean
+
+ENV APACHE_LOCK_DIR= "/var/loock"
+ENV APACHE_PID_FILE="/var/run/apache3.pid"
+ENV APACHE_RUN_USER="www-data"
+ENV APACHE_RUN_GROUP="www-data"
+ENV APACHE_
+
+docker pull claytondad/server21 
