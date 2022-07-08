@@ -40,4 +40,15 @@
 * Aula 2 - Conceitos sobre LDA/MDA ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula2/lda.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula2_LDA/LDA.ipynb)) 
 
 * Aula 3 - Conceitos sobre KPCA ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula3/kpca.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula3_kernelPCA/kernelPCA.ipynb)) 
-* 
+
+* Aula 4 - Conceitos sobre KFDA ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula4/kfda.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula4_KFDA/KFDA.ipynb)) 
+
+* Aula 5 - Conceitos sobre ISOMAP ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula5/isomap.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula5_ISOMAP/isomap.ipynb)) 
+
+* Aula 6 - Conceitos sobre LLE ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula6/lle.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula6_LLE/)) 
+
+* Aula 7 - Conceitos sobre RBM-DBN ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula7/rbm.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula7_RBM/RBM-DBN.ipynb)) 
+
+* Aula 8 - Conceitos sobre CNN ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula8/cnn.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula8_CNN/CNN.ipynb)) 
+
+* Aula 9 - Conceitos sobre GNN ([Slides](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/blob/master/ml-2/slides/aula9/gnn.pdf)) ([Exercícios](https://github.com/ai2-education-fiep-turma-4/04-machine-learning/tree/master/ml-2/exercicios/aula9_GCN/GCN.ipynb)) 
